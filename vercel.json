@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "build": {
+    "env": {
+      "NEXT_PUBLIC_WEATHER_API_KEY": "@weather_api_key"
+    }
+  }
+}
