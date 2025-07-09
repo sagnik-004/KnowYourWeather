@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KnowYourWeather</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="icon" type="image/png" href="image.png">
+
+</head>
+<body class="dawn-theme">
+    <div class="container">
+        <div class="weather-widget">
+            <div class="widget-header">
+                <div class="search-bar">
+                    <input type="text" id="city-input" placeholder="Search city...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+            </div>
+
+            <div class="widget-body" id="widget-body">
+                <div class="welcome-screen">
+                    <div class="welcome-icon"><i class="fas fa-cloud-sun"></i></div>
+                    <h3>KnowYourWeather</h3>
+                    <p>Enter a city to get started</p>
+                </div>
+            </div>
+
+            <div class="widget-footer">
+                <button class="tab-btn active" data-tab="details">Details</button>
+                <button class="tab-btn" data-tab="forecast">Forecast</button>
+                
+                <div class="tab-content active" data-tab="details">
+                    <div class="placeholder">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Weather details will appear here</p>
+                    </div>
+                </div>
+                <div class="tab-content" data-tab="forecast">
+                    <div class="placeholder">
+                        <i class="fas fa-calendar-alt"></i>
+                        <p>5-day forecast will appear here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    // Render will replace this during deployment
+    window.WEATHER_API_KEY = "<!-- WEATHER_API_KEY -->";
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
