@@ -1,4 +1,4 @@
-const API_KEY = window.WEATHER_API_KEY;
+const API_KEY = window.WEATHER_API_KEY || "";  // Empty fallback
 const themeToggle = document.getElementById("theme-toggle");
 const searchBtn = document.getElementById("search-btn");
 const cityInput = document.getElementById("city-input");
