@@ -1,4 +1,4 @@
-const API_KEY = window.WEATHER_API_KEY || "";
+const API_KEY = "2562e2af5c2a6c83592143cc0d48facc";
 const themeToggle = document.getElementById("theme-toggle");
 const searchBtn = document.getElementById("search-btn");
 const cityInput = document.getElementById("city-input");
